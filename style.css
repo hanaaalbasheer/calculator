@@ -1,0 +1,30 @@
+body{
+font-style: italic;
+    font-size: 75px;
+    background-attachment: fixed;
+    background-color: black;
+    align-self: center;
+    
+}
+.button{
+width: 75px;
+height: 75px;
+border-radius: 100px;
+background-color: gray;
+border: none;
+}
+.orange{
+
+    background-color: rgb(236, 134, 60);
+
+}
+.up3{
+    background-color: rgb(189, 189, 189);
+}
+.input{
+    width: 347px;
+    height: 42px;
+    background-color: black;
+    font-size: 50px;
+    color: white;
+}
