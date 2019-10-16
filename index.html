@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>calculator</title>
+<title>calculator</title>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="calculator">
-            <input type="text" class="input" value="">
-  
-            <div class="calculator-keys">
-              <div class="row1">
-              <button type="button" class="button up3" value="AC">AC</button>
-              <button type="button" class="button up3" value="+/-">+/-</button>
-              <button type="button" class="button up3" value="%">%</button>
-              <button type="button" class="button orange" value="÷">÷</button>
-            </div>
-            <div class="row2">
-              <button type="button" class="button" value="7">7</button>
-              <button type="button" class="button" value="8">8</button>
-              <button type="button" class="button" value="9">9</button>
-              <button type="button" class="button orange" value="x">x</button>
-            </div>
-              
-            <div class="row3">
-              <button type="button"  class="button" value="4">4</button>
-              <button type="button"  class="button" value="5">5</button>
-              <button type="button"  class="button"  value="6">6</button>
-              <button type="button"  class="button orange" value="-">-</button>
-              </div>
-              <div class="row4">
-              <button type="button" class="button" value="1">1</button>
-              <button type="button" class="button" value="2">2</button>
-              <button type="button" class="button" value="3">3</button>
-              <button type="button" class="button orange" value="+">+</button>
-            </div>
-              <div class="row5">
-              <button type="button" class="button" value="0">0</button>
-              <button type="button" class="button" value="0">0</button>
-              <button type="button" class="button" value=".">.</button>
-              <button type="button"class="button orange" value="=">=</button>
-            </div>
-           
-          
+  <div class="calculator">
+    <input type="text" class="input" id="input" placeholder="0" readonly="readonly">
+    <div class="calculator-keys">
+      <div class="row1">
+        <button class="button up3" value="AC" onclick="clean('')">AC</button>
+        <button class="button up3" value="-" onclick="calculate('-')">+/-</button>
+        <button class="button up3" value="%" onclick="calculate('%')">%</button>
+        <button class="button orange" value="/" onclick="calculate('/')">÷</button>
+      </div>
+      <div class="row2">
+        <button class="button" value="7" onclick="calculate('7')">7</button>
+        <button class="button" value="8" onclick="calculate('8')">8</button>
+        <button class="button" value="9" onclick="calculate('9')">9</button>
+        <button class="button orange" value="x" onclick="calculate('*')">x</button>
+      </div>
+
+      <div class="row3">
+        <button class="button" value="4" onclick="calculate('4')">4</button>
+        <button class="button" value="5" onclick="calculate('5')">5</button>
+        <button class="button" value="6" onclick="calculate('6')">6</button>
+        <button class="button orange" value="-" onclick="calculate('-')">-</button>
+      </div>
+      <div class="row4">
+        <button class="button" value="1" onclick="calculate('1')">1</button>
+        <button class="button" value="2" onclick="calculate('2')">2</button>
+        <button class="button" value="3" onclick="calculate('3')">3</button>
+        <button class="button orange" value="+" onclick="calculate('+')">+</button>
+      </div>
+      <div class="row5">
+        <button class="button zero" value="0" onclick="calculate('0')">0</button>
+        <button class="button" value="." onclick="calculate('.')">.</button>
+        <button class="button orange" value="=" onclick="result()">=</button>
+      </div>
+</div>
     </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
